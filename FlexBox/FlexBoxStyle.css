@@ -1,0 +1,62 @@
+*{
+  /* box-sizing: border-box; */
+}
+
+
+.container{
+    border: 1px solid black;
+    height: 700px;
+    width: 700;
+    
+    display: flex; 
+    /* this will maake  flex-direction: column by default when we use display flex */
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; -> whis wont sequze the page
+  flex-wrap: wrap-reverse;  this will not sequze and when we tr the last col at top and all down
+  */
+  /* flex-flow: column; */
+  /* flex-direction: row; */
+ 
+  /*  justify-content: flex-end;
+  justify-content: flex-start;
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */ 
+  /* justify-content: space-evenly; */ 
+  /* align-items: flex-end;
+  align-items: baseline; */
+
+  /* align-items: center;
+  justify-content: center;
+     */
+     flex-wrap: wrap-reverse ;
+}
+
+
+.box{
+    border: 2px solid black;
+    width: 150px;
+     /* flex-grow: 2; --> we can also apply to individual. */
+     /* flex-grow: 1; */
+    
+    
+}
+
+
+
+
+#b1{
+  /* by default order is zero and a max num is on last and then its smaller near number is second last whith order n-1 where n is the last div order */
+  order: 8;
+  /* flex-grow: 10; */
+  /* flex-grow: 1; */
+ 
+}
+#b2{
+  /* now if i give value more than one it will be crossed behind b2 */
+  order: 5;
+}
+#b3{
+  order: 7;
+  /* flex-grow: 10; */
+}

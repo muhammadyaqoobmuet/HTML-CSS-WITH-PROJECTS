@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+           width: 500px;
+               height: 500px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: #F5811E;
+            position: relative;
+            animation: xvx 2s infinite ease-in-out 1s normal ;
+            
+        }
+        .eyes{
+            position: absolute;
+            width: 250px;
+            height: 50px;
+            
+            left: 25%;
+            top: 20%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .eye{
+            height: 100%;
+            width: 30%;
+            border-radius: 50%;
+            background-image: radial-gradient(white,black)
+        }
+            .mouth{
+                position: absolute;
+                width: 250px;
+            height: 50px;
+            left: 25%;
+            top: 60%;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSinlYukMuxtYSLh9XjBeXtDFSgRB4zO60Cijj3GQ&s);
+            background-position: center;
+            background-size: cover;
+            }
+
+
+
+            @keyframes xvx {
+
+                0%{
+                   
+                    box-shadow: 10px 10px 12px rgb(218, 89, 3);
+                    box-shadow: -10px -10px 12px rgb(218, 89, 3);
+                }
+                50%{
+                    box-shadow: 18px 18px -18px -18px 15px rgb(218, 89, 3);
+                    
+                }
+                80%{
+                    box-shadow: 10px 10px 13px rgb(218, 89, 3);
+                    box-shadow: -10px -10px 13px rgb(218, 89, 3);
+                }
+               
+            }
+    
+
+    </style>
+    
+
+    <div class="container">
+       <div class="eyes">
+        <div class="eye"></div>
+        <div class="eye"></div>
+       </div>
+       <div class="mouth"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* 
+Relative position -> means it will be chnaged relativty to orignal place of box (div) 
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    
+    border: 1px solid black;
+    display: inline-block;
+ 
+}
+
+.abu{
+    background-color: rebeccapurple;
+    width: 100vw;
+    height: 3000px;
+    position: relative;
+    
+}
+.beta{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+#b34{
+    background-color: rgb(41, 14, 41);
+    position: absolute;
+    top: 200px;
+}

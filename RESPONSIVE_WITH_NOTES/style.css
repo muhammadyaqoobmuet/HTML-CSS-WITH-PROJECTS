@@ -1,0 +1,297 @@
+@font-face {
+    font-family:Gilroy ;
+    src: url(Radomir\ Tinkov\ -\ Gilroy-ExtraBold.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Gilroy;
+
+}
+
+html,body {
+  height: 100%;
+  width: 100%;
+}
+
+.gradient{
+    position: absolute;
+    width: 100%;
+    height: 100% ;
+    
+    background-image: linear-gradient(  to bottom,#7248ee1b , rgba(255, 255, 255, 0.093));
+    z-index: -1;
+    left: 0;
+    top: 0;
+   
+    
+}
+.container .nav{
+    
+    width: 100%;
+    height: 80px;
+    /* border-bottom: 1px solid black; */
+    background-color: #7248EE;
+    
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 4vw;
+    color: white;
+}
+.nav h2{
+    font-size: 3.2vw;
+    
+}
+.nav .nav-left{
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+   
+}
+.nav-left h4{
+   font-size: 1.8vw;
+   font-weight: 400px;
+   color: whitesmoke;
+}
+.nav-left button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw;
+    padding: 1.2vw 2vw;
+    background-color: #EE4878;
+    background-color: #fff;
+    color: rgb(26, 1, 1);
+    border: none;
+    border-radius: 7px;
+}
+.nav-left i{
+   font-size: 2.5vw;
+   display: none;
+}
+
+.main{
+    
+    width: 100%;
+    height: calc(100% - 80px);
+    /* background-color: red; */
+    display: flex;
+}
+
+.left{
+    position: relative;
+    width: 50%;
+    height:100%;
+    
+    padding: 2vw 4vw;
+    
+}
+
+.left h1{
+    font-size: 3.3789vw;
+    word-spacing: 1px;
+   
+    
+    
+    
+}
+.left span{
+    color: #7248EE;
+    letter-spacing: 2px;
+}
+.left p{
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 600;
+    font-size: 1.2vw;
+    color: #666;
+    width: 90%;
+    margin-top: 1.9vw;
+    margin-bottom: 3vw;
+    
+    line-height: 20px;
+}
+.left button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2vw;
+    padding: 1.2vw 2vw;
+    width: 40%;
+    background-color: #7248EE;
+   
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+.right{
+    width: 50%;
+    height:100%;
+    
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+
+
+.second-main{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(  to bottom,#7248ee59 , rgba(255, 255, 255, 0.093));
+}
+
+
+
+@media (max-width:500px) {
+    .container .nav {
+        padding: 0px 5vw;
+        
+        
+    }
+    .container .nav h2{
+        font-size: 7vw;
+    }
+   .nav-left button{
+    display: none;
+   }
+    .nav-left i{
+      
+        display: block;
+        font-size: 6vw;
+       
+    }
+  .container  .nav-left h4{
+        display: none;
+
+    }
+
+    .main{
+        flex-direction: column;
+        height: 100%;
+    }
+    .left{
+        width: 100%;
+        height: 50%;
+    }
+    .left h1{
+        font-size: 7vw;
+        padding: 0vw 3vw;
+    }
+    .left p{
+        line-height: normal;
+        font-size: 4.5vw;
+        padding: 0vw 3vw;
+        margin-top: 4vw;
+        margin-bottom: 5.5vw;
+        width: 100%;
+
+    }
+    .left button{
+        font-size: 4vw;
+        padding: 5vw 3vw;
+        width: 50%;
+    }
+
+    .right{
+     width: 100%;
+     height: 50%;
+    }
+    .right img{
+       
+        height: 100%;
+        width: 100%;
+    }
+}
+.second-main{
+    
+}
+
+.second-main .courseheading{
+
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
+    border:1px solid #ddd;
+    background-color: #eee;
+    height: 80px;
+    display: flex;
+    color: #7248EE;
+    align-items: center;
+    justify-content: center;
+    
+   
+
+}
+.second-main h3{
+    text-shadow: 1px 2px 4px rgb(234, 174, 174);
+
+   
+}
+.cards{
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    padding: 2vw 4vw;
+    
+}
+.card{
+    width: 30%;
+    height: 100% ;
+    border: 1px solid black;
+    margin-left: 3vw;
+    
+    
+}
+#card1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 24px;
+    
+    
+    
+}
+
+#card1 img{
+    border: 1px solid black;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background-color: white;
+    object-fit: cover;
+
+   
+    
+}
+.name h4{
+    
+    font-size: 3vw;
+    width: 100%;
+    margin-top: 2vw;
+
+}
+#card1::before{
+    content: "";
+    position: absolute;
+   top: 0;
+    left: 0;
+    background-color: #7248EE;
+    width: 100%;
+        height: 50%;
+        z-index: -1;
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+}
+
+

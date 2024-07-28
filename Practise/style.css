@@ -1,0 +1,39 @@
+
+.flex-container{
+    display: flex;
+    border: 1px solid olive;
+    height: 45vh;
+  
+    
+   
+   align-items: center;
+   /* flex-wrap: wrap; */
+   justify-content: center;
+   
+    
+    
+}
+.box{
+    border: 1px solid orangered;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    
+    
+    
+}
+#b1{
+  background-color: burlywood;
+ 
+  flex-shrink: 1;
+}
+#b2{
+    background-color: rgb(168, 227, 108);
+   
+    flex-shrink: 1;
+}
+#b3{
+   background-color: rgb(195, 140, 101);
+   
+   flex-shrink: 0.5;
+}

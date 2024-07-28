@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc8c8;
+}
+.profilecard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    /* width: 100%; */
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 24px;
+    box-shadow: 0px 5px 10px black;
+}
+
+.image{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: rgb(203, 104, 33);
+    padding: 3px;
+    margin-bottom: 10px;
+    
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.profilecard .textdata{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profilecard .textdata .name{
+    font-size: 25px;
+    font-weight: 550;
+}
+.profilecard .textdata .job{
+    font-size: 16px;
+    font-weight: 550;
+    color: #333;
+}
+
+.profilecard .media-button{
+    display: flex;
+    align-items: center;
+}
+.media-button .link{
+    display: flex;
+    background-color:rgb(203, 104, 33);
+    text-decoration: none;
+    margin: 0px 8px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+.profilecard::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: rgb(203, 104, 33);
+}
+.profilecard .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+}
+.buttons .button{
+    border: none;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 24px;
+    margin: 0px 10px;
+    padding: 8px 24px;
+    background-color: rgb(203, 104, 33);
+    color: black;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+.buttons .button:hover{
+    color: rgb(63, 61, 61);
+    background-color: rgb(203, 104, 33,0.9);
+}
+.profilecard .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.analytics .data{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    border-right: 2px solid #33333351;
+
+}
+@media only screen and (max-width: 250px) {
+    /* Adjustments for screens 250px and less */
+    .buttons .button {
+        font-size: 12px;
+        /* Add any other adjustments you need for small screens */
+    }
+}
+
+@media only screen and (min-width: 251px) and (max-width: 600px) {
+    /* Adjustments for screens between 251px and 600px */
+    .profilecard {
+        max-width: 80%; /* Adjust the max-width as needed */
+    }
+    .profilecard .buttons .button {
+        /* Add any other adjustments you need for medium-sized screens */
+    }
+}

@@ -1,0 +1,53 @@
+div.para{
+    height: 100px;
+    width: 500px;
+    /* border-width: 3px;
+    border-color: black;
+    border-style: solid; 
+   we can write in short form 
+    border; soild black 1px
+   
+   */
+/*  to change properties of borderside we use border top,left.right,bottom-properties: change */
+    border: 3px rgb(95, 84, 216) solid;
+      border-collapse: collapse;
+      border-left-color: rgba(0, 232, 201, 0.972);
+      border-left-style:dotted;
+      border-right-color: rgb(255, 0, 0);
+      border-right-style: dotted;
+      border-top: 10px crimson dotted;  /* this is also similar to border*/
+      /*  border radius used to curve the boundires of box */
+      border-radius: 40px;
+    }
+h1{
+    height: 100px;
+    width: 200px;
+    border-width: 2px;
+    border-color: rgb(222, 35, 35);
+    border-style: dashed;
+   
+    
+}
+input{
+    height: 20px;
+    width: 500;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+input:hover{
+    background-color: rgba(171, 167, 167, 0.159);
+}
+button{
+    border: black solid 2px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 50px;
+    border-radius: 10px;
+}
+button:hover{
+   font-weight: lighter;
+    color: chartreuse;
+    transition: ease-in-out 2ms;
+}

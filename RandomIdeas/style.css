@@ -1,0 +1,32 @@
+
+body{
+   background-color: rgb(187, 144, 144);
+}
+.inerbox{
+    width: 600px;
+    height: 500px;
+    border: 2px solid rgb(157, 60, 60);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+
+}
+.container {
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Make sure the container takes up the entire viewport height */
+    
+}
+h1{
+    padding: 10px;
+    margin: -4px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-width: 3px;
+}
+.list .para:hover{
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(128, 128, 128, 0.465);
+
+}

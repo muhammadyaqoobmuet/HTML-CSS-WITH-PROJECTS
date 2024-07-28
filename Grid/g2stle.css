@@ -1,0 +1,49 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.holder{
+    border: 1px solid black;
+    display:  grid;
+   grid-template-areas: "nav nav nav"
+                        "box1 main box2" 
+                        "box1 main  box2"
+                        "foot foot foot" 
+                        ;
+                      height: 100vh;
+                      gap: 5px;
+                        
+   
+}
+.item{
+    border: 1px solid crimson;
+    
+    
+}
+.item-A{
+    margin-top: 10px;
+    height: 10vh;
+    grid-area: nav;
+    position: sticky;
+    top:10px;
+    
+}
+.item-B{
+    grid-area: box1;
+    height: 80vh;
+}
+.item-Main{
+    grid-area: main;
+    height: 80vh;
+}
+.item-C{
+    grid-area: box2;
+    height: 80vh;
+}
+
+.item-D{
+    grid-area: foot;
+    height: 10vh;
+}

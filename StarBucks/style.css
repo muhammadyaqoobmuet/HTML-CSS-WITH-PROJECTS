@@ -1,0 +1,378 @@
+
+@font-face {
+    font-family: netflix;
+    src: url(fonts/NetflixSans-Medium.otf);
+}
+@font-face {
+    font-family: netflix-ligher;
+    src: url(fonts/NetflixSans-Light.otf);
+}
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+font-family: netflix;
+}
+
+html,body{
+
+height:100%;
+width:100%;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2.5rem;
+    border-bottom: 1px solid gray;
+    /* box-shadow: 0px 2px 3px black; */
+   
+ 
+}
+.navleft{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    gap: 2rem;
+    
+  
+    
+
+}
+#sing{
+    cursor: pointer;
+}
+.navleft span{
+    font-size: 1.9vw;
+}
+.navleft img{
+    width: 20%;
+    height: 60px;
+
+}
+.navright{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navright button{
+    font-size: 1.3vw;
+    padding: 0.3rem 1rem;
+    border-radius: 16px;
+    border: 1px solid black;
+}
+#sing{
+  background-color: #fff;
+  color: black;
+}
+#join{
+    background-color: black;
+    color: white;
+}
+.btn{
+    margin-right: 0.8rem;
+    font-size: 1.3.vw;
+}
+.hero{
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background: rgb(51, 153, 61); */
+    display: flex;
+
+}
+.heroleft{
+    background-image: linear-gradient(to right,#00ff9959,rgba(255, 255, 255, 0.123));
+    width: 55%;
+    height: 100%;
+   background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    align-self: stretch;
+    margin-bottom: 0.6rem;
+}
+.fhead{
+    font-size: 4.5vw;
+
+}
+.shead{
+    font-size: 5vw;
+}
+.shead span{
+    font-weight: 600;
+    color: #027044;
+}
+.thead{
+    font-family: netflix-ligher;
+}
+.learnmore{
+    font-size: 1.3vw;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.263);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.245);
+    background-color: #027044;
+    width: 30%;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 0.8rem;
+}
+.heroright{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.bgc{
+    width: 100%;
+    background-color: #027044;
+    border-top-left-radius: 5000rem;
+    height: 100%;
+    position: relative;
+
+}
+.bgc img{
+    position: absolute;
+
+    left: 15%;
+    bottom: 0;
+    /* padding: 3rem 2rem; */
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+.firstsec{
+    margin-top: 1rem;
+    height: 60%;
+    width: 100%;
+    background-color: royalblue;
+    display: flex;
+}
+.fsec{
+    width: 50%;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #006241;
+    padding: 1rem 3rem;
+}
+.fsec h5{
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1rem;
+    
+    
+}
+.fsec h6{
+    font-size: 1.3rem;
+    color: white;
+    font-family: netflix-ligher;
+    font-weight: 300;
+    margin: 0.3rem auto;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  
+
+}
+.ssec{
+    width: 50%;
+    height: 100%;
+    background-color: greenyellow;
+}
+.btn-free{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.3rem 1.5rem;
+    border-radius: 30px;
+}
+.ssec{
+    background-image: url(https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87613.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 100%;
+}
+.secsec{
+    margin-top: 1rem;
+    height: 80%;
+    width: 100%;
+    background-color: royalblue;
+    display: flex;
+}
+.fsecsec{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87616.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+   
+}
+.secsec .ssecsec{
+    width: 50%;
+    height: 100%;
+    background-color: #AD96DC;   
+}
+.ssecsec h5{
+    color: #1E3932;
+    font-size: 3rem;
+}
+.ssecsec h6{
+    color: #1E3932;
+}
+.ssecsec button{
+    color: #1E3932;
+    border: 1px solid black;
+}
+
+.tecsec{
+    margin-top: 1rem;
+    height: 80%;
+    width: 100%;
+    background-color: royalblue;
+    display: flex;
+}
+.tsecsec{
+    background-color: #76232F;
+    
+}
+.tsecsec h5{
+    font-size: 4rem;
+}
+.tsecsecpic{
+    background-image: url(https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87618.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 50%;
+    height: 100%;
+
+
+}
+.thanks{
+    background-image: url(https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87475.jpg);
+}
+
+#third{
+    background-image: linear-gradient(to bottom ,  #dc0033,  #e62854, #dc0033eb);
+   
+}
+#third h5{
+    color: white;
+    font-size: 3.5rem;
+}
+#third h6{
+    color: white;
+}
+#third button{
+    color: white;
+    border: 1px solid white;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 80vh;
+    width: 100vw;
+    background-color: white;
+    color: gray;
+    padding: 20px;
+    font-family: netflix-ligher;
+    font-weight: 100;
+}
+
+.footer-item {
+    padding: 10px;
+}
+.bolder{
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.footer-container {
+    border-top:2px solid #33333329 ;
+    background-color: white;
+    color: #000000;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+
+/* @media  (max-width: 900px) {
+   .cup{
+        left: 0;
+   }
+  }
+
+  @media  (max-width: 800px) {
+    .cup{
+         left: 100%;
+         width: 400px;
+    }
+   }
+   
+   @media  (max-width: 600px) {
+    .cup{
+         left: 100%;
+         width: 200px;
+         height: 200px;
+    }
+   } */

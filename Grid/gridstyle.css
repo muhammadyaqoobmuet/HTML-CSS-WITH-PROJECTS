@@ -1,0 +1,28 @@
+.holder{
+    border: 1px solid rgb(105, 28, 28);
+   
+    background-color: rgb(16, 0, 255);
+    display: grid;
+    grid-template-columns: 100px 100px ;
+}
+.item{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+   
+}
+/* .item-D{
+    grid-row: 1/2;
+    grid-column: 1/2;  this iwll place item-D from 1-2 row and 1 - 2 col overall in 1st cell
+} */
+/* .item-E{
+    grid-row: 1/2; -- means grid-row-strat:1; grid-row-end:2;
+    grid-column: 1/2; this also do same but overlaps
+} */
+
+.item-A{
+    /* grid-row: 1/2;
+    grid-column: 1/3;   this will expand
+    */
+    /* background-color: red;   */
+}

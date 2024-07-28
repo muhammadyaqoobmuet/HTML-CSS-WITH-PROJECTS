@@ -1,0 +1,90 @@
+.changeIntoRed{
+    color: red;
+}
+/* this will style all the anchor tags in paragraph -> desendent styling 
+but demerit is that when we create another p in which anchor tag is present it will also give it a color to avoid we use class
+to outer like paragraph
+2 -> multiple choices
+*/
+p a{
+    color: rgb(255, 16, 68);
+}
+nav ul li{
+    color: chocolate;
+}
+/* to select all the div whose id is myID and change its paraghraph -> 2 ways */
+
+/* 
+WAY->1
+div[id="myID"] p{
+    color: green;
+} */
+#myID p{
+    color: yellowgreen;
+}
+/*Sibling Combinator -> this will give propert to equal level elemetn */
+p+h3{ /* as we know every paragraph after there is h3 so it will apply properties on it*/
+   
+    text-shadow: 1px;
+    color: brown;
+    text-transform: capitalize;
+}
+
+/* Child Combinator 
+demerit:  this only works for direct child means if a parent has child then child then it wont work but desendednt works
+
+*/
+div>input{
+    background-color: darkslategrey;
+    color: wheat;
+}
+.upvote {
+    color: white;
+    background-color: crimson;
+    text-align: center;
+    text-decoration:wavy;
+}
+h1{
+color: rgb(241, 53, 53);
+
+}
+/* desendent */
+div ::placeholder{
+    color: rgb(0, 136, 255);
+}
+
+
+h1 button{
+    background-color: rgb(0, 230, 199);
+}
+/* attribute selector -> for specfic elem whose tyype or attribute ="some value " we apply properties on it  */
+ input[type="text"]{
+    color: palegoldenrod;
+ }
+ input[type="password"]{  /* if we want all the elements who has a type then we just  input[type]{}  */
+    color: rgb(142, 135, 52);
+ }
+ button:hover{
+    color: rgb(32, 26, 0);
+    background-color: bisque;
+    transition: 1s;
+    text-decoration: solid;
+    text-decoration: underline;
+}
+button:active{
+    background-color: crimson;
+    color: ghostwhite;
+}
+h2,h3:active{
+    transition: 0.5s;
+    color: blue;
+    text-decoration: aliceblue;
+    text-align: center;
+}
+ 
+input[type="radio"]:checked +label{
+    color: brown;
+    font-weight: bold;
+    transition: 2s;
+    text-transform: capitalize;
+}

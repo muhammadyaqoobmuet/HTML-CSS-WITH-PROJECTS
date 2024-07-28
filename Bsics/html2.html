@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- to open link in new tab we use following comands in aherf
+    _self: the current browsing context. (Default)
+_blank: usually a new tab, but users can configure browsers to open a new window instead.
+_parent: the parent browsing context of the current one. If no parent, behaves as _self.
+_top: the topmost browsing context (the
+ "highest" context that's an ancestor of the current one). If no ancestors, behaves as _self.
+    
+    -->
+    <!-- <a href="mailto:muhammadyaqoob45700@gmai.com">email</a> -->
+    <!-- <a> element links to the section below -->
+<p><a href="#Section_further_down">Jump to the heading below</a></p>
+
+<!-- Heading to link to -->
+
+
+    <style>
+         .colored-paragraph {
+            background-color: yellow;
+            display: inline;
+            padding: 5px;
+        }
+        #MIA{
+            color: rgb(111, 255, 0);
+            font: bold;
+            font-style: initial;
+            font-size: larger;
+        }
+               
+        #M{
+            color: rgb(0, 234, 255);
+        }
+    </style>
+    <hr style="color: red;">
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <a id="MIA" href="https://www.facebook.com" target="_blank"> facebook</a>
+   <hr id="M" style="color: rebeccapurple;">
+    <h2 id="Section_further_down">hE further down</h2>
+    <p style="border-color: rgb(157, 0, 255);">this is what it is</p>
+    <p>
+        This is some example text. <span class="colored-paragraph">Highlighted background</span> continues only where the text ends. The background color doesn't span the full width of the page.
+    </p>
+</body>
+</html>

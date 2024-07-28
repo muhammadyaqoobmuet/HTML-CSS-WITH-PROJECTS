@@ -1,0 +1,15 @@
+
+div:nth-last-child(4n-2){
+    background-color: red;
+}
+/* selection element  jisko select krenga uska blue background sa set color wala hojaega*/
+p::selection{
+    color: brown;
+    background-color: crimson;
+}
+input:focus{
+    background-color: aqua;
+}
+input:disabled{
+    background-color: crimson;
+}

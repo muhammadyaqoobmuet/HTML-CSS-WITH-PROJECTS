@@ -1,0 +1,14 @@
+.grid-container {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Adjust the number of columns as needed */
+    grid-template-rows: 100px 100px 100px; /* Adjust the height of rows as needed */
+    gap: 10px;
+    border: 1px solid black;
+  }
+
+  .item{
+    border: 1px solid black;
+    background-color: #eee;
+  }
+  

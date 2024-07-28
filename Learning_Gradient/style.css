@@ -1,0 +1,79 @@
+.grad-linear{
+    /* background-image: linear-gradient(rgb(233, 72, 72),rgb(243, 243, 97)); */
+/*  by default top to bottom first color from top then bottom */
+
+
+/*  but we can specify where to go first color see div2 */
+background-image: linear-gradient(to bottom right, red ,pink);
+
+
+
+
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+
+}
+.div2{
+
+border: 1px solid black;
+        height: 200px;
+        width: 200px;
+      
+/*  but we can specify where to go first color see div2 */
+background-image: linear-gradient(to bottom , rgb(255, 7, 7) ,pink,rgb(120, 40, 40));
+/* WE ALSO CAN ADD from which angle to start
+ background-image: linear-gradient(45deg , red ,pink); */
+
+ /* --> Transparancy <--- */
+ 
+ background-image: linear-gradient(to bottom , rgb(255, 7, 7,0) ,pink,rgb(120, 40, 40,1));
+/*  */
+/* background-image: linear-gradient(to left, blue 25% , green 25%, yellow 25% , rgb(176, 51, 51) 25%, red 25%) */
+ /*  */
+}
+.bands{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin-left: 300px;
+    margin-top: -300px;
+    /* radial gradient */
+    background-image: radial-gradient( orange,red,rgba(212, 212, 227, 0.328)  120%);    
+
+}
+
+.shadow{
+    height: 200px;
+    width: 400px;
+    
+     margin-left: 700px;
+     background-color: crimson;
+     box-shadow: 9px 8px 1px black ,  -9px -8px 1px black  ;
+     /* Max Height vs Min Height
+     when we use min height and use border to it and if we add etxra Content in it it will grow with content and content wont over flow
+     max height : it is used when content reached to given height and if we add more it overflow 
+     to avoid it we use overflow:scroll;
+     
+     */
+}
+
+.heights{
+    
+   max-height: 30px;
+  overflow: scroll;
+   border: 1px solid black;
+   
+/* overflow: auto , vissible hidden scroll there are four properties of overflow 
+ overflow auto behave when it is applicable to vissible and if it overflow then it changes to scroll
+ overflow:vissible acts as vissbile overflown content and simiilary hideen hide the overflown content
+
+
+
+
+
+*/
+
+
+}

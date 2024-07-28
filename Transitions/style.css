@@ -1,0 +1,17 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: crimson;
+    /* transition: 1s; this is short hand full hand is */
+    transition-timing-function: steps(1s);
+/* tranition: propertyname | duration |  timing-function| delay */
+
+}
+.box:hover{
+
+    /* transform: translate(400px); */
+    border-radius: 50%;
+    background-color: rgb(212, 34, 34);
+    border: 1px solid white;
+}

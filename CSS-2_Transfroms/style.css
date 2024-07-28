@@ -1,0 +1,32 @@
+/* CSS 2D Transforms
+With the CSS transform property you can use 
+the following 2D transformation methods:
+1.Translate() Method:
+
+The translate() method moves an element from its current position 
+(according to the parameters given for the X-axis and the Y-axis).
+
+
+*/
+.trans{
+   transform:translate(20px,500px); 
+
+   
+
+}
+.trans:hover{
+   transform:translate(20px,400px); 
+   transition: ease-in-out 1s;
+   transform: rotate(45);
+
+
+}
+#lun{
+   border: 1px solid black;
+   width: 300px;
+  height: 100px;
+  
+   margin: 200px;
+   transform: scale(0.5);
+}
+
